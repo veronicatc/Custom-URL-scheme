@@ -22,7 +22,8 @@
   <issue>https://github.com/EddyVerbruggen/Custom-URL-scheme/issues</issue>
 
   <preference name="URL_SCHEME" />
-
+  <preference name="URL_IDENTIFIER" default="" />
+        
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
   </engines>
@@ -36,6 +37,8 @@
     <config-file target="*-Info.plist" parent="CFBundleURLTypes">
       <array>
         <dict>
+          <key>CFBundleURLName</key>
+          <string>$URL_IDENTIFIER</string>
           <key>CFBundleURLSchemes</key>
           <array>
             <string>$URL_SCHEME</string>
