@@ -71,17 +71,17 @@
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$ANDROID_SCHEME"
-              android:host="$ANDROID_HOST"
-              android:pathPrefix="$ANDROID_PATHPREFIX" />
-      </intent-filter>            
+        <data android:scheme="$URL_SCHEME"/>
+      </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-        <data android:scheme="$URL_SCHEME"/>
-      </intent-filter>
-    </config-file>
+        <data android:scheme="$ANDROID_SCHEME"
+              android:host="$ANDROID_HOST"
+              android:pathPrefix="$ANDROID_PATHPREFIX" />
+      </intent-filter>            
+     </config-file>
   </platform>
 
   <!-- windows8 -->
