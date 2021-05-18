@@ -1,7 +1,7 @@
 module.exports = function(context) {
-    var fs = context.requireCordovaModule('fs'),
-        et = context.requireCordovaModule('elementtree'),
-        path = context.requireCordovaModule('path'),
+    var fs = context.require('fs'),
+        et = context.require('elementtree'),
+        path = context.require('path'),
         xml= context.requireCordovaModule('cordova-common').xmlHelpers,
         projectRoot = path.join(context.opts.projectRoot, "platforms", "windows");
 
